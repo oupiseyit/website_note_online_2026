@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "200ff2e7-3798-4b36-9e2e-6a3179946ac3",
+    "file": "/Users/pisey/.claude/projects/-Users-pisey-Documents-001-Pisey-001-Projects-002-Laravel-projects-website-note-online/200ff2e7-3798-4b36-9e2e-6a3179946ac3.jsonl",
+    "bytes": 88337,
+    "messages": 52,
+    "modified": "2026-06-24T16:05:47"
+  },
+  {
+    "session_id": "5ab29405-d4aa-4cec-847a-712b47231458",
+    "file": "/Users/pisey/.claude/projects/-Users-pisey-Documents-001-Pisey-001-Projects-002-Laravel-projects-website-note-online/5ab29405-d4aa-4cec-847a-712b47231458.jsonl",
+    "bytes": 19103423,
+    "messages": 101,
+    "modified": "2026-06-24T16:00:57"
+  },
+  {
+    "session_id": "5ddb98cc-7e87-4d30-aa3e-ea51fa6fa928",
+    "file": "/Users/pisey/.claude/projects/-Users-pisey-Documents-001-Pisey-001-Projects-002-Laravel-projects-website-note-online/5ddb98cc-7e87-4d30-aa3e-ea51fa6fa928.jsonl",
+    "bytes": 113689,
+    "messages": 66,
+    "modified": "2026-06-24T15:43:20"
+  },
+  {
+    "session_id": "89a93eff-df50-4aa5-a894-232f5b3f5504",
+    "file": "/Users/pisey/.claude/projects/-Users-pisey-Documents-001-Pisey-001-Projects-002-Laravel-projects-website-note-online/89a93eff-df50-4aa5-a894-232f5b3f5504.jsonl",
+    "bytes": 48118,
+    "messages": 24,
+    "modified": "2026-06-24T15:21:48"
+  }
+]

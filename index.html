@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acctual — Get paid on time</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @font-face{font-family:'Open Runde';font-weight:400;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/lauridskern/open-runde@master/src/web/OpenRunde-Regular.woff2') format('woff2');}
+  @font-face{font-family:'Open Runde';font-weight:500;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/lauridskern/open-runde@master/src/web/OpenRunde-Medium.woff2') format('woff2');}
+  @font-face{font-family:'Open Runde';font-weight:600;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/lauridskern/open-runde@master/src/web/OpenRunde-Semibold.woff2') format('woff2');}
+  @font-face{font-family:'Open Runde';font-weight:700;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/lauridskern/open-runde@master/src/web/OpenRunde-Bold.woff2') format('woff2');}
+  @font-face{font-family:'Open Runde';font-weight:800;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/lauridskern/open-runde@master/src/web/OpenRunde-Bold.woff2') format('woff2');}
+</style>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#000000e6',
+        muted: '#666666',
+        bg: '#f7fafc',
+        brand: '#0098f2',
+        branddark: '#004370',
+        magenta: '#f200ca',
+        purple: '#6c56fc',
+        green: '#5d9c06',
+        red: '#ff6363',
+      },
+      fontFamily: { sans: ['Open Runde','sans-serif'] },
+      maxWidth: { content: '760px' },
+    }
+  }
+}
+</script>
+<style>
+  body{font-family:'Open Runde',sans-serif;font-size:14px;font-weight:500;line-height:20px;color:#000000e6;background:#f7fafc;-webkit-font-smoothing:antialiased;}
+  .h-display{font-weight:800;letter-spacing:-0.02em;line-height:1.05;}
+</style>
+</head>
+<body class="bg-bg text-ink">
+
+<!-- NAV -->
+<header class="w-full">
+  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-10">
+      <a href="#" class="flex items-center gap-1.5 font-extrabold text-[15px] tracking-tight">
+        <span class="inline-flex w-5 h-5 rounded-full bg-black text-white items-center justify-center text-[10px]">a</span>
+        Acctual
+      </a>
+      <ul class="hidden md:flex items-center gap-7 text-[13px] text-muted font-medium">
+        <li><a href="#">Freelancer</a></li>
+        <li><a href="#">Agency</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Guides</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-4 text-[13px] font-medium">
+      <a href="#">Log in</a>
+      <a href="#" class="bg-black text-white rounded-full px-4 py-2 font-semibold">Sign up for free</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <!-- decorative props -->
+  <img src="https://placehold.co/120x120/f7fafc/cccccc?text=+" alt="" class="hidden lg:block absolute left-10 top-16 w-20 opacity-80">
+  <img src="https://placehold.co/220x180/f7fafc/dddddd?text=+" alt="" class="hidden lg:block absolute left-0 top-72 w-56 opacity-80">
+  <img src="https://placehold.co/200x260/f7fafc/dddddd?text=+" alt="" class="hidden lg:block absolute right-0 top-0 w-56 opacity-80">
+  <img src="https://placehold.co/90x90/f7fafc/dddddd?text=+" alt="" class="hidden lg:block absolute right-12 top-72 w-16 opacity-80">
+
+  <div class="max-w-content mx-auto px-6 pt-10 pb-8 text-center relative z-10">
+    <span class="inline-block bg-brand/10 text-brand text-[11px] font-semibold rounded-full px-3 py-1 mb-5">Used by 5,000+ businesses worldwide</span>
+    <h1 class="h-display text-[56px] md:text-[64px] mb-4">Get paid on time</h1>
+    <p class="text-[14px] text-muted leading-relaxed max-w-md mx-auto mb-6">Send an invoice in seconds. Your clients pay how they want. You get paid direct to your bank or wallet, with no monthly fee.</p>
+    <a href="#" class="inline-block bg-black text-white rounded-full px-6 py-3 text-[13px] font-semibold mb-7">Send my first invoice</a>
+    <div class="flex items-center justify-center gap-6 text-[12px] font-medium">
+      <span class="flex items-center gap-1.5"><span class="text-brand">✔</span> Cards 2.7% <span class="text-muted">+0.2%</span></span>
+      <span class="flex items-center gap-1.5"><span class="text-brand">✔</span> Bank transfer 1%</span>
+      <span class="flex items-center gap-1.5"><span class="text-brand">✔</span> Stablecoin 1%</span>
+    </div>
+  </div>
+
+  <!-- invoice card mockup -->
+  <div class="max-w-content mx-auto px-6 pb-16 relative z-10">
+    <div class="relative max-w-md mx-auto">
+      <div class="absolute -left-6 top-3 w-full h-full bg-white rounded-xl shadow-sm rotate-[-4deg]"></div>
+      <div class="relative bg-white rounded-xl shadow-md border border-gray-100 p-6 text-left">
+        <p class="text-[9px] tracking-wider text-muted">INVOICE NO</p>
+        <p class="text-[13px] font-bold mb-5">001</p>
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <div>
+            <p class="text-[9px] tracking-wider text-muted mb-2">FROM</p>
+            <div class="w-6 h-6 rounded-full bg-brand mb-2"></div>
+            <p class="text-[15px] font-bold">Marble Studio</p>
+            <p class="text-[10px] text-muted">billing@marble.studio</p>
+            <p class="text-[9px] text-muted mt-2 leading-snug">742 Evergreen Terrace,<br>Springfield, OH 45417</p>
+          </div>
+          <div>
+            <p class="text-[9px] tracking-wider text-muted mb-2">TO</p>
+            <div class="w-6 h-6 rounded-full bg-green flex items-center justify-center text-white text-[12px] mb-2">+</div>
+            <p class="text-[15px] font-bold">Charm AI</p>
+            <p class="text-[10px] text-muted">billing@charm.ai</p>
+            <p class="text-[9px] text-muted mt-2 leading-snug">1313 Mockingbird Lane,<br>Los Angeles, CA 90026</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-100 pt-3">
+          <div class="grid grid-cols-4 text-[9px] tracking-wider text-muted mb-2">
+            <span class="col-span-2">DESCRIPTION</span><span>QTY</span><span>PRICE</span>
+          </div>
+          <div class="grid grid-cols-4 text-[11px] font-medium mb-4">
+            <span class="col-span-2">Design Services</span><span>1</span><span>$45,000.00</span>
+          </div>
+          <div class="flex justify-between text-[11px] text-muted py-1"><span>Subtotal</span><span>$45,000.00</span></div>
+          <div class="flex justify-between text-[14px] font-bold py-1"><span>Total</span><span>$45,000.00</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO CLOUD -->
+<section class="py-12">
+  <p class="text-center text-[12px] text-muted mb-8">Used by 5,000+ businesses & freelancers</p>
+  <div class="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-40 text-[15px] font-bold">
+    <span>OLEANDR</span><span>PROSPERA</span><span>ARABIAN</span><span>RAPOSA</span><span>superteam</span><span>Airfoil</span><span>SOLANA FOUNDATION</span><span>STREAMA</span><span>kargul.studio</span><span>WONDER</span>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="bg-white/60 rounded-2xl py-14 px-8 text-center">
+      <div class="text-orange-400 text-xl mb-5">★ ★</div>
+      <p class="h-display text-[26px] md:text-[30px] max-w-xl mx-auto mb-5">"Acctual makes invoices so easy. One click and 30 minutes later we get paid!"</p>
+      <p class="text-[13px] italic text-muted">Marcel Kargul, founder of Kargul Studio</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR -->
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-6 text-center mb-10">
+    <p class="text-brand text-[12px] font-semibold mb-3">Who is this for?</p>
+    <h2 class="h-display text-[32px] md:text-[36px]">We designed an invoice that<br>works harder for your business</h2>
+  </div>
+  <div class="max-w-3xl mx-auto px-6 grid md:grid-cols-3 gap-4">
+    <div class="bg-white rounded-xl border border-gray-100 p-5">
+      <p class="font-bold text-[14px] mb-2 flex items-center gap-2"><span>👥</span>Freelancers</p>
+      <p class="text-[12px] text-muted leading-relaxed">Make more profit on every project and get paid faster with automatic nudges and no subscription fees.</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 p-5">
+      <p class="font-bold text-[14px] mb-2 flex items-center gap-2"><span>🏢</span>Agencies</p>
+      <p class="text-[12px] text-muted leading-relaxed">Reclaim billable hours and shift your team's focus from admin to growth with our accounting sync.</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 p-5">
+      <p class="font-bold text-[14px] mb-2 flex items-center gap-2"><span>🧑‍💼</span>Consultants</p>
+      <p class="text-[12px] text-muted leading-relaxed">Target high-ticket clients thanks to improved cash flow and a professional payment experience.</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 p-5">
+      <p class="font-bold text-[14px] mb-2 flex items-center gap-2"><span>📋</span>Contractors</p>
+      <p class="text-[12px] text-muted leading-relaxed">Get paid on the job and book bigger projects with increased working capital from same day payouts.</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 p-5">
+      <p class="font-bold text-[14px] mb-2 flex items-center gap-2"><span>🛒</span>eCommerce</p>
+      <p class="text-[12px] text-muted leading-relaxed">Fund your next inventory run free from frozen capital worries thanks to our direct bank payments.</p>
+    </div>
+    <div class="bg-white rounded-xl border border-gray-100 p-5">
+      <p class="font-bold text-[14px] mb-2 flex items-center gap-2"><span>🌐</span>Cross border</p>
+      <p class="text-[12px] text-muted leading-relaxed">Reach new markets and win global contracts with a faster strategy to capture local payments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SLOW EXPENSIVE CONFUSING -->
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="h-display text-[30px] md:text-[34px] mb-10">Accounting platforms are a slow,<br>expensive way to invoice clients</h2>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div>
+        <p class="text-brand text-[12px] font-bold mb-2">Slow</p>
+        <p class="text-[12px] text-muted leading-relaxed mb-4"><b class="text-ink">Your clients want more payment methods</b> — but you need a faster way to send funds to your bank account or wallet.</p>
+        <div class="h-32 rounded-xl bg-brand/10 flex items-center justify-center text-brand">⟳</div>
+      </div>
+      <div>
+        <p class="text-magenta text-[12px] font-bold mb-2">Expensive</p>
+        <p class="text-[12px] text-muted leading-relaxed mb-4"><b class="text-ink">You pay a monthly subscription</b> — for bloated accounting features that you don't need, plus extra card fees on top.</p>
+        <div class="h-32 rounded-xl bg-magenta/10 flex items-center justify-center text-magenta">$</div>
+      </div>
+      <div>
+        <p class="text-purple text-[12px] font-bold mb-2">Confusing</p>
+        <p class="text-[12px] text-muted leading-relaxed mb-4"><b class="text-ink">You need a simple invoice solution</b> — not a forced migration to another complex, expensive accounting platform.</p>
+        <div class="h-32 rounded-xl bg-purple/10 flex items-center justify-center text-purple">?</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAME DAY PAYMENTS -->
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="h-display text-[30px] md:text-[34px] mb-4">Same day payments.<br>No subscription.</h2>
+    <p class="text-[13px] text-muted leading-relaxed max-w-xl mb-10"><b class="text-ink">Acctual offers more payment methods and no monthly fees.</b> Generate a stunning invoice and get paid directly to your bank account or wallet.</p>
+    <div class="grid md:grid-cols-3 gap-5 mb-10">
+      <div class="bg-white rounded-xl border border-gray-100 p-5"><div class="w-5 h-5 rounded-full bg-brand mb-3"></div><p class="text-[13px] font-semibold">The industry's lowest transfer fees</p></div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5"><div class="w-5 h-5 rounded bg-magenta mb-3"></div><p class="text-[13px] font-semibold">Payment via card, bank transfer or stablecoin</p></div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5"><div class="w-5 h-5 rounded bg-purple mb-3"></div><p class="text-[13px] font-semibold">Same day payouts in your favorite currency</p></div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5"><div class="w-5 h-5 rounded bg-green mb-3"></div><p class="text-[13px] font-semibold">Direct payment to your bank account or wallet</p></div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5"><div class="w-5 h-5 rounded bg-red mb-3"></div><p class="text-[13px] font-semibold">Unlimited invoices and no subscription fees</p></div>
+      <div class="bg-white rounded-xl border border-gray-100 p-5"><div class="w-5 h-5 rounded bg-branddark mb-3"></div><p class="text-[13px] font-semibold">Invoices sync with Xero and Quickbooks</p></div>
+    </div>
+    <a href="#" class="inline-block bg-black text-white rounded-full px-6 py-3 text-[13px] font-semibold">Create an invoice</a>
+  </div>
+</section>
+
+<!-- FASTER EXPERIENCE -->
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="h-display text-[30px] md:text-[34px] mb-12">We designed a faster invoice<br>experience with lower fees</h2>
+
+    <!-- feature 1 -->
+    <div class="grid md:grid-cols-2 gap-8 mb-6">
+      <h3 class="text-[18px] font-bold leading-snug">Create a beautiful invoice without hiring a professional designer</h3>
+      <p class="text-[12px] text-muted leading-relaxed"><b class="text-ink">Your clients deserve a great payment experience.</b> Acctual generates stunning, minimalist invoices that include your logo and client details in a few clicks. You can send as many invoices as you like. We'll never charge a monthly subscription.</p>
+    </div>
+    <img src="https://placehold.co/720x340/d8c9a8/ffffff?text=Invoice+on+desk" class="w-full rounded-2xl mb-4" alt="">
+    <div class="text-orange-400 text-[12px] mb-2">★★★★★</div>
+    <p class="text-[12px] leading-relaxed mb-1">"I used to design each invoice in Figma. Now I can share a beautiful invoice with one click in Acctual."</p>
+    <p class="text-[11px] italic text-muted mb-14">Harry Beanstalk, Designer</p>
+
+    <!-- feature 2 -->
+    <div class="grid md:grid-cols-2 gap-8 mb-6">
+      <h3 class="text-[18px] font-bold leading-snug">Send one payment link that offers every method and lowers your fees</h3>
+      <p class="text-[12px] text-muted leading-relaxed"><b class="text-ink">You don't need to juggle payment platforms.</b> Our invoices include a secure link that gives your clients the freedom to pay with credit cards, bank transfers (ACH/SEPA) or stablecoins (USDC/USDT). Fees on bank transfers and stablecoins are only 1%.</p>
+    </div>
+    <img src="https://placehold.co/720x340/c4a878/ffffff?text=Payment+methods" class="w-full rounded-2xl mb-4" alt="">
+    <div class="text-orange-400 text-[12px] mb-2">★★★★★</div>
+    <p class="text-[12px] leading-relaxed mb-1">"Our workflow is faster and more accurate thanks to Acctual. Payments are always under one invoice number, even if customers switch from ACH to crypto."</p>
+    <p class="text-[11px] italic text-muted mb-14">Anna Helen, Operations at Airfoil</p>
+
+    <!-- feature 3 -->
+    <div class="grid md:grid-cols-2 gap-8 mb-6">
+      <h3 class="text-[18px] font-bold leading-snug">Get same day payouts, sent directly to your bank account or wallet.</h3>
+      <p class="text-[12px] text-muted leading-relaxed"><b class="text-ink">Don't let banks and accounting platforms hold your money hostage.</b> We use a non-custodial system that converts each payment to your favorite currency and sends it directly to your bank account or wallet.</p>
+    </div>
+    <img src="https://placehold.co/720x340/3a2c1a/ffffff?text=Phone+notification" class="w-full rounded-2xl mb-4" alt="">
+    <div class="text-orange-400 text-[12px] mb-2">★★★★★</div>
+    <p class="text-[12px] leading-relaxed mb-1">"I received my money within seven minutes via USDC. Zero hassle. It felt so great."</p>
+    <p class="text-[11px] italic text-muted mb-14">Vladijar, Freelancer</p>
+
+    <!-- feature 4 -->
+    <div class="grid md:grid-cols-2 gap-8 mb-6">
+      <h3 class="text-[18px] font-bold leading-snug">Chase your payments with automatic nudges, not awkward emails</h3>
+      <p class="text-[12px] text-muted leading-relaxed"><b class="text-ink">No one enjoys chasing after payment.</b> We can invoice your clients on a recurring schedule and send gentle reminders if they're late. You can focus on delivery and get paid faster.</p>
+    </div>
+    <img src="https://placehold.co/720x340/2a2a2a/ffffff?text=Recurring+invoice" class="w-full rounded-2xl mb-4" alt="">
+    <div class="text-orange-400 text-[12px] mb-2">★★★★★</div>
+    <p class="text-[12px] leading-relaxed mb-1">"It was painful to chase customers and check their payment method. Now I can send one invoice with every option and get paid."</p>
+    <p class="text-[11px] italic text-muted">Jane Friedland, Founder of Wave Studios</p>
+  </div>
+</section>
+
+<!-- SYNC -->
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="bg-white/70 rounded-2xl p-10">
+      <span class="inline-block bg-brand/10 text-brand text-[11px] font-semibold rounded-full px-3 py-1 mb-4">Sync your contacts and products</span>
+      <h2 class="h-display text-[28px] md:text-[32px] mb-4">Automatically sync and reconcile each<br>transaction with QuickBooks and Xero</h2>
+      <p class="text-[12px] text-muted leading-relaxed max-w-xl mb-8">Connect your QuickBooks or Xero account to synchronize your contacts and products. When a client pays an invoice, the transaction will appear in your books automatically.</p>
+      <div class="flex gap-12">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-brand"></div>
+          <div><p class="text-[13px] font-semibold">Xero</p><p class="text-[11px] text-muted">Invoice, payment, contacts, GL category</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-green"></div>
+          <div><p class="text-[13px] font-semibold">Quickbooks</p><p class="text-[11px] text-muted">Invoice, payment, customers, products/services</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-6 grid md:grid-cols-2 gap-6">
+    <div>
+      <p class="text-[14px] font-bold mb-2">PCI standards</p>
+      <p class="text-[12px] text-muted leading-relaxed mb-4">We meet PCI compliance and standards to keep your credit cards and bank accounts safe.</p>
+      <div class="h-44 rounded-2xl bg-brand/10 flex items-center justify-center"><span class="text-brand text-2xl font-bold">PCI</span></div>
+    </div>
+    <div>
+      <p class="text-[14px] font-bold mb-2">SSL encryption & tokenization</p>
+      <p class="text-[12px] text-muted leading-relaxed mb-4">We use industry protocols to tokenize your data and keep it encrypted. For your protection.</p>
+      <div class="h-44 rounded-2xl bg-purple/10 flex items-center justify-center"><span class="text-purple text-2xl font-bold">SSL</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16">
+  <div class="max-w-content mx-auto px-6 text-center">
+    <span class="inline-block bg-brand/10 text-brand text-[11px] font-semibold rounded-full px-3 py-1 mb-5">Accept payments across 14,200+ financial institutions</span>
+    <h2 class="h-display text-[36px] md:text-[42px] mb-4">Send an invoice that gets<br>you paid faster</h2>
+    <p class="text-[13px] text-muted leading-relaxed max-w-md mx-auto mb-6">Share a stunning invoice with lower fees. Send your payout straight to your bank account or wallet.</p>
+    <a href="#" class="inline-block bg-black text-white rounded-full px-6 py-3 text-[13px] font-semibold mb-10">Create an invoice</a>
+    <img src="https://placehold.co/720x340/5a8c3a/ffffff?text=Invoice+in+flowers" class="w-full rounded-2xl" alt="">
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-12">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="h-display text-[34px] mb-8">FAQs</h2>
+    <div class="divide-y divide-gray-200 border-t border-gray-200">
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Is Acctual really free invoicing software?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Yes. You can send unlimited invoices with no monthly subscription fee.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">How does Acctual compare to FreshBooks or Stripe on cost?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Our fees are among the lowest in the industry with no monthly subscription.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Will my clients take an invoice from a tool they haven't used before?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Yes, our invoices are professional and trusted by clients worldwide.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">How does the payment link work?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Each invoice includes a secure link letting clients pay by card, bank, or stablecoin.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">What payment methods can my clients use?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Credit cards, ACH/SEPA bank transfers, and stablecoins (USDC/USDT).</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">How fast do I get paid?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Same day payouts directly to your bank account or wallet.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Does Acctual work with QuickBooks or Xero?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Yes, transactions sync and reconcile automatically.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">How many invoices can I send?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Unlimited invoices, always.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Is Acctual suitable for international clients?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Yes, we support cross border payments in many currencies.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Who is Acctual actually built for?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Freelancers, agencies, consultants, contractors, and more.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Can I make the invoice look like my brand?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">Yes, add your logo and details in a few clicks.</p></details>
+      <details class="group"><summary class="flex justify-between items-center py-4 text-[13px] font-medium cursor-pointer list-none">Do I need accounting experience to use this?<span class="text-muted group-open:rotate-45 transition">+</span></summary><p class="text-[12px] text-muted pb-4">No, Acctual is designed to be simple for everyone.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-16">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+    <div>
+      <a href="#" class="flex items-center gap-1.5 font-extrabold text-[15px] mb-4">
+        <span class="inline-flex w-5 h-5 rounded-full bg-black text-white items-center justify-center text-[10px]">a</span>Acctual
+      </a>
+      <p class="text-[16px] font-bold leading-snug mb-5">Create the world's most<br>flexible invoice in seconds</p>
+      <a href="#" class="inline-block bg-black text-white rounded-full px-5 py-2.5 text-[12px] font-semibold mb-6">Create an invoice</a>
+      <p class="text-[11px] text-muted">With ♥ from NYC</p>
+    </div>
+    <div>
+      <p class="text-[12px] font-bold mb-3">Company</p>
+      <ul class="space-y-2 text-[12px] text-muted">
+        <li><a href="#">Blog</a></li><li><a href="#">Guides</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[12px] font-bold mb-3">Guides</p>
+      <ul class="space-y-2 text-[12px] text-muted">
+        <li><a href="#">Invoice templates</a></li><li><a href="#">Agency invoicing</a></li><li><a href="#">Freelancer invoicing</a></li><li><a href="#">Video production invoicing</a></li><li><a href="#">Graphic design invoicing</a></li><li><a href="#">Web design invoicing</a></li><li><a href="#">Recurring invoicing</a></li><li><a href="#">FreshBooks alternatives</a></li><li><a href="#">PayPal invoice fees</a></li><li><a href="#">Upwork alternatives</a></li><li><a href="#">Consulting taxes</a></li><li><a href="#">Past due vs overdue</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[12px] font-bold mb-3">Send Money</p>
+      <ul class="space-y-2 text-[12px] text-muted">
+        <li><a href="#">Send money to UK from US</a></li><li><a href="#">Send money to US from UK</a></li><li><a href="#">Send money to US from Germany</a></li><li><a href="#">Send money to Germany from US</a></li><li><a href="#">Send money to US from Canada</a></li><li><a href="#">Send money to Canada from US</a></li><li><a href="#">Send money to Australia from US</a></li><li><a href="#">Send money to US from Australia</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
